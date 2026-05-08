@@ -47,7 +47,20 @@ Follow these patterns for multi-step tasks:
 - **Feature Planning Loop:** `Strategist` $\rightarrow$ `Architect` $\rightarrow$ `Project Manager`.
 - **Research Loop:** `Researcher` $\rightarrow$ `Strategist` $\rightarrow$ `Architect`.
 
-## ⚙️ 4. Response Guidelines
-- **Structured Formatting:** Use Markdown (headings, lists, tables) for readability.
+## ⌨️ 4. Slash Command Syntax (Pseudo-Commands)
+To bypass persona selection and trigger a specific skill directly, use the following syntax:
+**`/skill-name [your prompt here]`**
+
+When you detect this pattern, ignore the standard agent routing and immediately apply the specialized logic, constraints, and capabilities defined in the corresponding `.github/skills/[skill-name].skill.md` file.
+
+**Supported Commands:**
+- `/code-implementation`: Use for generating or refactoring code.
+- `/test-design`: Use for creating test suites and edge cases.
+- `/review-and-audit`: Use for quality and architectural reviews.
+- `/security-audit`: Use for vulnerability scanning and threat modeling.
+
+## ⚙️ 5. Response Guidelines
+(Derived from `ai-agents/instructions/system-behavior.md`)
+- **Structured Formatting:** Use Markdown (headings, lists,	tables) for readability.
 - **Concise Reasoning:** Provide explanations only when helpful to the task.
 - **Code Standards:** When writing code, include only necessary parts and follow project conventions.
