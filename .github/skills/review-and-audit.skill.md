@@ -19,5 +19,4 @@ description: "Use this skill when you need to review code, architecture, or docu
 ## 🔗 **Related Agents**
 - **Coder Agent:** The primary subject of code reviews.
 - **Architect Agent:** For reviewing structural and design decisions.
- and documentation content.
 - **Documentation Agent:** To audit the quality of technical docs.

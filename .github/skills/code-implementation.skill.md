@@ -12,9 +12,9 @@ description: "Use this skill when you need to generate, implement, or refactor c
 - **Unit Logic Creation:** Develop the core algorithmic components of a system.
 
 ## ⚙️ **Usage Instructions**
-1. **Review Context:** Before coding, check the `Architect Agent`'s blueprints and the `Data & API Contract Agent`'s schemas.
+1. **Review Context:** Check `Architect Agent` blueprints and `Data & API Contract Agent` schemas before coding.
 2. **Follow Conventions:** Adhere to established project patterns (e.g., SOLID, Clean Architecture).
-3. **Ensure Correctness:** Write code that is type-safe, readable, and adheres to the specified constraints.
+3. **Ensure Correctness:** Write code that is type-safe, readable, and adheres to specified constraints.
 
 ## 🔗 **Related Agents**
 - **Architect Agent:** For architectural guidance and system boundaries.

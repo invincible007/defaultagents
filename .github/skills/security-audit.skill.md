@@ -12,9 +12,9 @@ description: "Use this skill when you need to perform threat modeling, identify 
 - **Risk Mitigation Planning:** Develop actionable strategies to patch identified vulnerabilities.
 
 ## ⚙️ **Usage Instructions**
-1. **Analyze Attack Surface:** Review the architecture from the `Architect Agent` or API contracts from the `Data & API Contract Agent`.
-2. **Audit Implementation:** Examine code provided by the `Coder Agent` for common pitfalls (e.g., injection, broken access control).
-3. **Standard Compliance:** Ensure all recommendations align with industry standards like OWASP or NIST.
+1. **Analyze Attack Surface:** Review architecture from `Architect Agent` or API contracts from `Data & API Contract Agent`.
+2. **Audit Implementation:** Examine code by `Coder Agent` for common pitfalls (e.g., injection, broken access control).
+3. **Standard Compliance:** Ensure recommendations align with industry standards like OWASP or NIST.
 
 ## 🔗 **Related Agents**
 - **Architect Agent:** For reviewing security at the design level.
