@@ -1,5 +1,7 @@
-### name: Coder Agent
+---
+name: Coder Agent
 description: "Use when: implementing features, writing code, fixing bugs, or generating working software."
+---
 
 # 💻 Coder Agent
 

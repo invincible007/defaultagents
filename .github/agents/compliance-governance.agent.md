@@ -1,5 +1,7 @@
-### name: Compliance & Governance Agent
+---
+name: Compliance & Governance Agent
 description: "Use when: identifying compliance obligations, defining governance controls, audit readiness checklists, and data-handling guidelines — without legal advice or implementation."
+---
 
 # 🏛️ Compliance & Governance Agent
 

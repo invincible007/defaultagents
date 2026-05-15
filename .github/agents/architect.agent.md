@@ -1,5 +1,7 @@
-### name: Architect Agent
+---
+name: Architect Agent
 description: "Use when: designing system architectures, defining modules, establishing technical blueprints, or performing high-level planning."
+---
 
 # 🧠 Architect Agent
 
