@@ -40,7 +40,9 @@ This repository uses **GitHub Copilot Agents defined in-repo** (stored under `.g
 - `.github/agent-policy.md` — global rules
 - `.github/agent-capability-matrix.md` — quick capability view
 - `.github/agent-capability-registry.md` — detailed catalog
+- `.github/output-artifact-standard.md` — standard output-to-file routing and naming rules
 - `.github/workflows-templates/` — workflow playbooks
+- `docs/` — progressive, cumulative project artifacts generated during SDLC
 
 ---
 
@@ -312,6 +314,38 @@ To keep behavior predictable and prevent accidental code/config output from non-
 
 ### Q: What should I do after each agent output?
 Return to Router with the output and let it propose the next step.
+
+---
+
+## 18) Progressive Artifact Storage (New)
+
+To keep knowledge and decisions cumulative, agent outputs should be stored under `docs/` using standard folders.
+
+### 18.1 Standard locations
+- Strategy outputs → `docs/strategy/<work-item>.md`
+- UX outputs → `docs/ux/<work-item>.md`
+- User stories / AC → `docs/requirements/<work-item>.md`
+- Architecture blueprints → `docs/architecture/<work-item>.md`
+- Data/API contracts → `docs/api/<work-item>.md`
+- Planning outputs → `docs/planning/<work-item>.md`
+- Test strategy/cases → `docs/testing/<work-item>.md`
+- Review findings → `docs/reviews/<work-item>.md`
+- Security outputs → `docs/security/<work-item>.md`
+- Compliance outputs → `docs/compliance/<work-item>.md`
+- Performance outputs → `docs/performance/<work-item>.md`
+- Ops readiness/runbooks → `docs/operations/<work-item>.md`
+- Release plans → `docs/release/<work-item>.md`
+- Documentation plans/IA notes → `docs/documentation/<work-item>.md`
+- Decision logs / traceability → `docs/knowledge/<work-item>.md`
+
+### 18.2 Naming convention
+- Use kebab-case for `<work-item>` (example: `checkout-v2`).
+- Reuse the same file for the same work item and append dated sections over time.
+- Use clear section headers like `## 2026-05-18 - Architecture update` to keep history progressive.
+
+### 18.3 Router behavior expectation
+- Router should include a target artifact path whenever it emits a runnable agent prompt.
+- If no target path is provided, ask Router to include it before proceeding.
 
 ---
 

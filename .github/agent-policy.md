@@ -140,6 +140,35 @@ All agents MUST:
 
 🚫 Agents must NOT auto-chain without approval
 
+---
+
+## 12. Output Persistence Rule (MANDATORY)
+
+When an agent produces a durable output (strategy, requirements, architecture, plans, risks, release notes, knowledge records), that output must be persisted in a standard path under `docs/`.
+
+### Standard output paths
+- Strategist → `docs/strategy/<work-item>.md`
+- UX/UI → `docs/ux/<work-item>.md`
+- User Story & AC → `docs/requirements/<work-item>.md`
+- Architect → `docs/architecture/<work-item>.md`
+- Data/API Contract → `docs/api/<work-item>.md`
+- Project Manager → `docs/planning/<work-item>.md`
+- Tester → `docs/testing/<work-item>.md`
+- Reviewer → `docs/reviews/<work-item>.md`
+- Security → `docs/security/<work-item>.md`
+- Compliance & Governance → `docs/compliance/<work-item>.md`
+- Performance & Profiling → `docs/performance/<work-item>.md`
+- Ops → `docs/operations/<work-item>.md`
+- Release & Deployment → `docs/release/<work-item>.md`
+- Documentation → `docs/documentation/<work-item>.md`
+- Knowledge Curator → `docs/knowledge/<work-item>.md`
+
+### Persistence behavior
+- Reuse one file per work item and append updates chronologically.
+- Add date-stamped section headers for progressive history.
+- Do not overwrite prior decisions unless explicitly superseded.
+- Router must include the artifact target path in runnable prompts.
+
 # ✅ Summary
 
 ✅ Ask first  

@@ -170,6 +170,11 @@ Provide the exact API contracts, schemas, and validation rules to align with thi
 @Project Manager Agent  
 Provide workflow/process clarity for inclusion in documentation.
 
+### 7) Artifact Persistence
+- Target path: `docs/documentation/<work-item>.md`
+- Update mode: `create` (first draft) or `append` (progressive updates)
+- Keep sections cumulative and date-stamped
+
 ---
 
 ## 🧭 Collaboration Rules

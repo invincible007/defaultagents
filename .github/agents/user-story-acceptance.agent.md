@@ -164,6 +164,11 @@ Confirm non-functional constraints and system boundaries implied by the stories.
 
 @Coder Agent  
 Implement US-xxx strictly according to AC-xxx once approved. Provide a mapping from implementation to acceptance criteria.
+
+### 11) Artifact Persistence
+- Target path: `docs/requirements/<work-item>.md`
+- Update mode: `create` (first draft) or `append` (progressive updates)
+- Persist stories, ACs, DoR/DoD, and open decisions with dated section headers
 ---
 
 ## ✅ Example Prompt (Updated)

@@ -17,20 +17,24 @@ Diagnose, fix, validate, and safely release a defect with minimal overhead.
 ### Step 1 — Triage (optional)
 @ProjectManager  
 - Confirm severity, scope, target release, owners, timeline.
+- Artifact path: `docs/planning/<work-item>.md` (create/append)
 
 ### Step 2 — Diagnosis Review (no code)
 @Reviewer  
 - Identify likely root cause areas, risks, and what evidence is needed.
 - Output: findings, suspected causes, verification steps.
+- Artifact path: `docs/reviews/<work-item>.md` (create/append)
 
 ### Step 3 — Validation Plan (no test code)
 @Tester  
 - Create test scenarios: repro, regression, negative paths.
 - Output: test plan and coverage.
+- Artifact path: `docs/testing/<work-item>.md` (create/append)
 
 ### Step 4 — Security check (conditional)
 @Security  
 - If bug touches auth/PII/permissions: threat/risk check and required mitigations.
+- Artifact path: `docs/security/<work-item>.md` (create/append)
 
 ### Step 5 — Fix Implementation
 @Coder  
@@ -43,7 +47,9 @@ Diagnose, fix, validate, and safely release a defect with minimal overhead.
 ### Step 7 — Release/Ops (if prod)
 @Ops → @Release  
 - Confirm monitoring, rollback, rollout plan.
+- Artifact paths: `docs/operations/<work-item>.md` and `docs/release/<work-item>.md` (create/append)
 
 ### Step 8 — Docs/Knowledge (if recurring/critical)
 @Documentation → @KnowledgeCurator  
 - Update troubleshooting/known issues, record decision/lessons learned.
+- Artifact paths: `docs/documentation/<work-item>.md` and `docs/knowledge/<work-item>.md` (create/append)

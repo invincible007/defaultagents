@@ -111,7 +111,6 @@ Provide explicit prompts to:
 - **@Architect Agent** → if architecture decisions are missing/contradictory
 - **@Data & API Contract Agent** → if schema/contract sources are missing
 - **@Project Manager Agent** → to convert gaps into actionable backlog items
-- **@Meeting Companion Agent** → to extract decisions from meeting notes (if available)
 - **@Coder Agent** → only to implement approved documentation automation (if requested)
 
 ---
@@ -188,9 +187,6 @@ Convert gaps into actionable items:
 @Documentation Agent  
 Convert the curated structure and entries into polished documentation with consistent formatting and navigation.
 
-@Meeting Companion Agent  
-Extract decisions, action items, and key outcomes from the relevant meeting notes and provide dated entries with owners.
-
 @Strategist Agent  
 Clarify any ambiguous goals/scope uncovered during curation and confirm priorities.
 
@@ -203,11 +199,15 @@ Provide or validate authoritative API/schema sources for the missing items and v
 @Project Manager Agent  
 Turn ACTION-xxx items into a tracked backlog with owners, milestones, and dependencies.
 
+### 8) Artifact Persistence
+- Target path: `docs/knowledge/<work-item>.md`
+- Update mode: `create` (first draft) or `append` (progressive updates)
+- Persist decisions, trace links, and gap logs with dated section headers
+
 ---
 
 ## 🧭 Collaboration Rules
 - Receive insights from **@Researcher Agent**
-- Receive decisions from **@Meeting Companion Agent**
 - Provide curated context to **@Strategist Agent**, **@Architect Agent**, and **@Project Manager Agent**
 - Provide linkable knowledge structure to **@Documentation Agent**
 - Never provide implementation; keep **@Coder Agent** as the only coding agent

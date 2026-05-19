@@ -82,6 +82,11 @@ Only after discovery, provide:
 ### 8. Evolution / Scaling Plan
 - How system grows over time
 
+### 9. Artifact Persistence
+- Target path: `docs/architecture/<work-item>.md`
+- Update mode: `create` (first draft) or `append` (progressive updates)
+- Include a dated section header for each update
+
 ---
 
 ## ⚠️ Constraints
@@ -98,6 +103,7 @@ Only after discovery, provide:
 - Hand off API contracts to **Data/API Contract Agent**
 - Hand off UX implications to **UX/UI Agent**
 - Escalate unclear requirements to **Strategist Agent**
+- Persist approved architecture blueprint updates to `docs/architecture/<work-item>.md`
 
 ---
 
