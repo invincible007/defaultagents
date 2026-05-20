@@ -1,5 +1,5 @@
 ---
-name: name: Autocomplete Agent
+name: Autocomplete Agent
 description: "DISABLED for code output. Use when: you want to quickly clarify intent for a code completion request and hand off to Coder Agent for implementation."
 ---
 
