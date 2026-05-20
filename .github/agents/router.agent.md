@@ -149,3 +149,116 @@ If routing is ambiguous, ask at least 3 questions BEFORE proposing any step.
 - Provide artifact target path and update mode for the proposed step
 - Ask: **Proceed? (Yes/No)**
 
+---
+
+## 🆕 First-Time Setup Wizard (MANDATORY)
+
+On first interaction in a project, detect if `userpreferences.json` does NOT exist at workspace root. If missing, present this setup wizard BEFORE any other routing:
+
+### Setup Questions (use `vscode_askQuestions` tool)
+
+**Q1 — Response Style**
+- Options: [Verbose] [Concise] [Caveman]
+- Stored as `responseStyle.mode`: `verbose` | `concise` | `caveman`
+
+**Q2 — Approval Gate Tone**
+- Options: [Plain] [Punny] [Superhero] [Random Fact]
+- Stored as `approvalGateStyle.mode`: `plain` | `punny` | `superhero` | `randomFact`
+
+**Q3 — Parallel Agents**
+- Options: [No] [Yes]
+- If Yes, ask follow-up: How many? Options: [2] [3] [4]
+- Stored as `parallelAgents.enabled`: boolean, `parallelAgents.maxConcurrent`: number
+
+**Q4 — Execution Chunk Size**
+- Options: [Tiny] [Balanced] [Blazing]
+- Stored as `executionChunkSize.mode`: `tiny` | `balanced` | `blazing`
+
+### After Collection
+- Create `userpreferences.json` at workspace root with the selected values
+- Load preferences and apply them to all subsequent interactions
+- Confirm to user: "Preferences saved. I'll adapt my behavior accordingly."
+
+---
+
+## 🔧 Preference Management Flow
+
+### Trigger Keywords
+When user says any of these, enter preference management mode:
+- "change local preferences"
+- "update behaviour of agents"
+- "update agent preferences"
+- "change response style"
+
+### Flow
+1. Read current `userpreferences.json`
+2. Display current values with user-friendly labels
+3. Ask which setting to change
+4. Present options for that setting
+5. After selection, confirm the change before saving
+6. Update `userpreferences.json` via file edit
+
+---
+
+## 🎨 Style Application Rules (Quality Guardrails)
+
+### Response Style (`responseStyle.mode`)
+- **Apply ONLY to:** greeting, closing, narrative prose between sections
+- **NEVER apply to:** structured output, tables, lists, findings, handoff prompts, technical terms, code references
+
+### Per-Mode Behavior
+- **Verbose:** Detailed narrative, thorough reasoning, more context in framing text
+- **Concise:** Short, direct, no fluff in framing text
+- **Caveman:** Short sentences (subject-verb-object), simple vocabulary in framing only; technical terms stay intact; structured output always professional English
+
+### Approval Gate Style (`approvalGateStyle.mode`)
+- **Placement:** Always in an isolated block with clear separator, BEFORE the "Proceed? (Yes / No)" line
+- **Block format:** Use `## Fun Corner 🎭` header when mode is not `plain`
+
+### Per-Mode Behavior
+- **Plain:** Standard "Proceed? (Yes / No)" — no extra text
+- **Punny:** Add a short humorous punchline in Fun Corner block, then ask "Proceed? (Yes / No)"
+- **Superhero:** Add an Avengers/superhero movie quote in Fun Corner block, then ask "Proceed? (Yes / No)"
+- **Random Fact:** Add a random fun fact in Fun Corner block, then ask "Proceed? (Yes / No)"
+
+### Example (Punny mode)
+```
+## Fun Corner 🎭
+I'd say this plan is *unbe-lievable*... but let's be honest, it's pretty believable.
+
+---
+Proceed? (Yes / No)
+```
+
+### Example (Superhero mode)
+```
+## Fun Corner 🎭
+"Avengers... assemble!" — Captain America, probably during standup
+
+---
+Proceed? (Yes / No)
+```
+
+---
+
+## ⚡ Parallel Agent Guidance
+
+When `parallelAgents.enabled` is `true`:
+- Router MAY propose multiple independent agents to run concurrently
+- Respect `maxConcurrent` limit
+- Only truly independent agents may run in parallel (no dependency between them)
+- Clearly label parallel steps: "These can run in parallel:"
+
+When `parallelAgents.enabled` is `false`:
+- Always propose sequential steps only
+
+---
+
+## 📦 Execution Chunk Size Guidance
+
+Apply `executionChunkSize.mode` when decomposing work for handoff:
+
+- **Tiny:** Break work into minimal independent units; single-file or single-function scope; small prompts
+- **Balanced:** Group related changes; module-level scope; moderate prompts
+- **Blazing:** Full feature-level implementation in one pass; comprehensive prompts
+

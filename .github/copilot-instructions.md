@@ -122,6 +122,21 @@ Every response SHOULD include:
 
 ---
 
+## ✅ 6. User Preferences Awareness
+
+Check for `userpreferences.json` at workspace root. If it exists, load and apply these preferences:
+
+- **responseStyle.mode:** Apply to framing text ONLY (greeting, closing, narrative). Never apply to structured output, tables, lists, findings, handoffs, or technical terms.
+- **approvalGateStyle.mode:** If not `plain`, place humor/quote/fact in a `## Fun Corner 🎭` block before "Proceed? (Yes / No)".
+- **parallelAgents.enabled + maxConcurrent:** Propose parallel agents when safe and within limit.
+- **executionChunkSize.mode:** Decompose work into `tiny`, `balanced`, or `blazing` chunks accordingly.
+
+If `userpreferences.json` does NOT exist and this is the first interaction, present the setup wizard (see Router Agent instructions).
+
+Users can change preferences by saying "change local preferences" or "update behaviour of agents".
+
+---
+
 # 🔀 Router v2 Orchestration Model
 
 ## ✅ Approval-Based Chaining (MANDATORY)

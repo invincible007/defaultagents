@@ -169,6 +169,24 @@ When an agent produces a durable output (strategy, requirements, architecture, p
 - Do not overwrite prior decisions unless explicitly superseded.
 - Router must include the artifact target path in runnable prompts.
 
+---
+
+## 13. User Preferences Rule (MANDATORY)
+
+On first project interaction, Router SHALL present a setup wizard with 4 configuration questions.
+Responses are stored in `userpreferences.json` at workspace root.
+
+All agents SHALL respect loaded preferences:
+- Apply `responseStyle` to framing text ONLY (greeting, closing, narrative)
+- NEVER apply style to structured output, tables, lists, findings, handoffs, or technical terms
+- Apply `approvalGateStyle` in an isolated `## Fun Corner 🎭` block before the approval question
+- Respect `parallelAgents` settings when proposing concurrent work
+- Respect `executionChunkSize` when decomposing tasks
+
+Users can change preferences at any time by invoking @Router with:
+- "change local preferences"
+- "update behaviour of agents"
+
 # ✅ Summary
 
 ✅ Ask first  

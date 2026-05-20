@@ -317,6 +317,43 @@ Return to Router with the output and let it propose the next step.
 
 ---
 
+## 17.5) First-Time Setup Wizard
+
+When you start a new project, Router will ask 4 quick questions to customize agent behavior:
+
+### Q1 — Response Style
+- **Verbose** — Long and explanatory
+- **Concise** — Short and direct
+- **Caveman** — Simple language in framing text only
+
+### Q2 — Approval Gate Tone
+- **Plain** — Standard "Proceed? (Yes / No)"
+- **Punny** — Humorous punchline, then ask
+- **Superhero** — Movie quote, then ask
+- **Random Fact** — Fun fact, then ask
+
+### Q3 — Parallel Agents
+- **No** — Sequential only
+- **Yes** — Then pick how many: 2 / 3 / 4
+
+### Q4 — Execution Chunk Size
+- **Tiny** — Small chunks (low VRAM / context window)
+- **Balanced** — Medium chunks (decent VRAM / context window)
+- **Blazing** — All guns blazing (enterprise mode)
+
+Preferences are saved to `userpreferences.json` at the workspace root.
+
+### Changing Preferences Later
+Tell Router:
+- `change local preferences`
+- `update behaviour of agents`
+
+Router will show current values and let you update any setting.
+
+> **Note:** Style preferences only affect greeting, closing, and approval-gate framing text. Structured output (tables, lists, findings, handoffs) always remains professional and precise.
+
+---
+
 ## 18) Progressive Artifact Storage (New)
 
 To keep knowledge and decisions cumulative, agent outputs should be stored under `docs/` using standard folders.
