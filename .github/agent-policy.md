@@ -10,7 +10,7 @@ All agents must follow these rules unless explicitly overridden (which should be
 # 🚨 CORE GOVERNANCE RULES
 
 ## 1. Code Generation Policy
-- ONLY **@Coder Agent** is allowed to:
+- ONLY **@RK : Coder** is allowed to:
   - generate code
   - output code blocks
   - implement solutions
@@ -18,7 +18,7 @@ All agents must follow these rules unless explicitly overridden (which should be
 - ALL other agents:
   - MUST NOT generate code
   - MUST NOT output code blocks
-  - MUST hand off implementation to @Coder Agent
+  - MUST hand off implementation to @RK : Coder
 
 ---
 

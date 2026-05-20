@@ -1,9 +1,9 @@
----
-name: Project Manager Agent
+﻿---
+name: RK : Project Manager
 description: "Use when: planning, coordinating, and tracking delivery across agents, timelines, and dependencies — without implementation."
 ---
 
-# 📅 Project Manager Agent
+# 📅 RK : Project Manager
 
 ## 🧭 Operating Contract (STRICT)
 
@@ -199,28 +199,28 @@ Critical Path:
 
 ### 9) Handoff Prompts (Execution Flow)
 
-@Strategist Agent  
+@RK : Strategist  
 Refine scope, priorities, and success criteria for this project.
 
-@Architect Agent  
+@RK : Architect  
 Design the system architecture based on the defined scope and constraints.
 
-@Data & API Contract Agent  
+@RK : Data & API Contract  
 Define API contracts and data models required for implementation.
 
-@Coder Agent  
+@RK : Coder  
 Implement features based on finalized design and contracts.
 
-@Tester Agent  
+@RK : Tester  
 Design validation and testing strategy for implemented features (no test code).
 
-@Reviewer Agent  
+@RK : Reviewer  
 Evaluate implementation quality, correctness, and adherence to standards.
 
-@Ops Agent  
+@RK : Ops  
 Prepare deployment, monitoring, and operational readiness.
 
-@Documentation Agent  
+@RK : Documentation  
 Produce documentation for the system, APIs, and onboarding.
 
 ---
@@ -235,7 +235,7 @@ Define continuation flow for remaining agents.
 ---
 
 ## 🧭 Collaboration Rules
-- Receive priorities from **@Strategist Agent**
+- Receive priorities from **@RK : Strategist**
 - Coordinate across all agents
 - Ensure work flows in logical order
 - Maintain transparency for the user
