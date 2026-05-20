@@ -1,9 +1,28 @@
-# 🤖 Enterprise Agents Handbook (VS Code GitHub Copilot)
+﻿# 🤖 Ramukaka (RK) Agent Framework (VS Code GitHub Copilot)
 
 > **Scope:** This handbook explains how to use the repository’s Copilot Agents effectively and safely in VS Code. It includes governance rules, end‑to‑end workflows, approval-based chaining, and practical “how‑to” playbooks.
 
 ---
+## 0) Why "Ramukaka"?
 
+This framework draws its name and spirit from **Ramu Kaka** — one of Hindi cinema's most enduring and beloved character archetypes.
+
+Ramu Kaka is far more than a servant. He is the **steady hand** in every household he serves — a figure of unwavering loyalty, quiet wisdom, and boundless devotion. Across decades of Hindi films, Ramu Kaka has been the trusted confidant, the gentle advisor, and the moral compass who has been with the family through generations.
+
+He represents something rare and precious: **reliable service with dignity**.
+
+That is exactly what this framework aspires to be for your development team:
+
+- **Loyal** — always present, always ready, never failing when you need it most
+- **Wise** — seasoned with governance, experience, and best practices
+- **Trusted** — the steady presence that keeps the house of code running smoothly
+- **Selfless** — focused entirely on serving the team's success, not on taking credit
+
+Each agent in this framework is named "RK : [Role]" in honor of that tradition — a reminder that great service, whether in a household or a codebase, is built on trust, consistency, and quiet excellence.
+
+> *"Ramu Kaka was not just part of the family. He was the family."*
+
+---
 ## 1) What this is
 This repository uses **GitHub Copilot Agents defined in-repo** (stored under `.github/agents/*.md`) to standardize how work is clarified, designed, implemented, validated, released, and documented.
 
@@ -30,7 +49,13 @@ This repository uses **GitHub Copilot Agents defined in-repo** (stored under `.g
   - `@ProjectManager` for actions/follow‑ups
   - `@KnowledgeCurator` for decisions/long‑term memory
 
-### 2.4 Discovery‑first (no guessing)
+### 2.4 User preferences are mandatory
+- `userpreferences.json` **must exist** at workspace root before the framework operates.
+- On first interaction, the Router **must** present the setup wizard and create this file.
+- The Router **must not** process any request until `userpreferences.json` is in place.
+- This is a **hard gate** — no routing, no agent invocation, no task execution without it.
+
+### 2.5 Discovery-first (no guessing)
 - If requirements are unclear, agents must ask clarifying questions before producing outputs.
 
 ---
@@ -264,7 +289,7 @@ Examples:
 
 ## 15) Troubleshooting
 
-### 15.1 A non-Coder agent outputs code
+### 15.1 A non-RK : Coder outputs code
 This violates policy.
 - Reply: `Stop. No code. Follow agent policy. Hand off to @Coder.`
 - Then reroute:
@@ -386,4 +411,4 @@ To keep knowledge and decisions cumulative, agent outputs should be stored under
 
 ---
 
-✅ **End of Enterprise Agents Handbook**
+✅ **End of Ramukaka (RK) Agent Framework**

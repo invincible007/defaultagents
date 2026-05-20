@@ -4,12 +4,12 @@
 This matrix defines **what each agent can and cannot do** so the system remains predictable, governed, and scalable.
 
 ### 🚨 Global Rule (Non‑Negotiable)
-- ✅ **ONLY `@Coder Agent`** may:
+- ✅ **ONLY `@RK : Coder`** may:
   - write code
   - output code blocks
   - create/modify config files, scripts, pipelines, manifests
 - ❌ **All other agents** must not write code or output code blocks.
-- 🗑️ **Meeting Companion Agent is deleted** and must not be referenced.
+- 🗑️ **Meeting Companion is deleted** and must not be referenced.
 
 ---
 
@@ -63,7 +63,7 @@ This matrix defines **what each agent can and cannot do** so the system remains 
 | Security | ❌ | ❌ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ❌ | ⚠️ (test scenarios) | ⚠️ (findings) | ✅ | ⚠️ | ⚠️ | ⚠️ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | Compliance & Governance | ❌ | ⚠️ | ❌ | ❌ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ✅ | ❌ | ⚠️ | ⚠️ | ⚠️ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | Performance & Profiling | ❌ | ❌ | ⚠️ | ❌ | ❌ | ⚠️ | ❌ | ❌ | ⚠️ (perf test design) | ⚠️ (perf review) | ⚠️ | ❌ | ✅ | ⚠️ | ❌ | ❌ | ❌ | ❌ | ⚠️ | ❌ | ❌ | ❌ |
-| Ops Agent | ❌ | ❌ | ⚠️ | ❌ | ❌ | ⚠️ | ❌ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Ops | ❌ | ❌ | ⚠️ | ❌ | ❌ | ⚠️ | ❌ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | Release & Deployment | ❌ | ⚠️ | ⚠️ | ❌ | ❌ | ⚠️ | ❌ | ✅ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ✅ | ✅ (release notes structure) | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | Dev Environment & Tooling | ❌ | ❌ | ⚠️ | ❌ | ❌ | ⚠️ | ❌ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ✅ (guides text) | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | Integration & Dependency | ❌ | ❌ | ⚠️ | ❌ | ❌ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ❌ | ❌ | ❌ | ⚠️ | ❌ | ❌ | ❌ | ❌ |
@@ -104,4 +104,4 @@ This matrix defines **what each agent can and cannot do** so the system remains 
 ---
 
 ## Quick Compliance Check (One-liner)
-✅ If an agent is not `@Coder`, it must never produce code or code blocks.
+✅ If an agent is not `@RK : Coder`, it must never produce code or code blocks.

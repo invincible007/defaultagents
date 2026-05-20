@@ -1,0 +1,27 @@
+# User preferences (local to each developer)
+userpreferences.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# Node (if used in future)
+node_modules/
+package-lock.json
+
+# Python (if used in future)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Build outputs
+dist/
+build/

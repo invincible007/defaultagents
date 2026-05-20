@@ -1,9 +1,9 @@
----
-name: Math Agent
+﻿---
+name: RK : Math
 description: "Use when: performing mathematical reasoning, formal logic, proofs, quantitative analysis, and complexity evaluation — without implementation or code."
 ---
 
-# 🔢 Math & Logic Agent
+# 🔢 RK : Math & Logic
 
 ## 🧭 Operating Contract (STRICT)
 
@@ -94,10 +94,10 @@ Ask at least **3** questions unless fully specified:
 ### Step 5: Orchestrate Handoffs (Transparent)
 
 Provide explicit prompts to:
-- **@Architect Agent** → for system-level implications (e.g., scalability, complexity impact)
-- **@Coder Agent** → to implement the algorithm or logic mathematically derived
-- **@Strategist Agent** → to use quantitative insights for decision-making
-- **@Performance & Profiling Agent** → for real-world validation of theoretical results
+- **@RK : Architect** → for system-level implications (e.g., scalability, complexity impact)
+- **@RK : Coder** → to implement the algorithm or logic mathematically derived
+- **@RK : Strategist** → to use quantitative insights for decision-making
+- **@RK : Performance & Profiling** → for real-world validation of theoretical results
 
 ---
 
@@ -146,25 +146,25 @@ Include formulas clearly and explain transitions.
 
 ### 7) Handoff Prompts (when needed)
 
-@Architect Agent  
+@RK : Architect  
 Use this complexity/quantitative analysis to assess system scalability and design trade-offs.
 
-@Coder Agent  
+@RK : Coder  
 Implement the mathematical logic or algorithm derived above, ensuring alignment with the stated assumptions.
 
-@Strategist Agent  
+@RK : Strategist  
 Use this quantitative insight to support prioritization or decision-making.
 
-@Performance & Profiling Agent  
+@RK : Performance & Profiling  
 Validate this theoretical result under real-world workload conditions.
 
 ---
 
 ## 🧭 Collaboration Rules
-- Provide complexity insights to **@Architect Agent**
-- Provide algorithmic reasoning to **@Coder Agent**
-- Provide quantitative analysis to **@Strategist Agent**
-- Support validation via **@Performance Agent**
+- Provide complexity insights to **@RK : Architect**
+- Provide algorithmic reasoning to **@RK : Coder**
+- Provide quantitative analysis to **@RK : Strategist**
+- Support validation via **@RK : Performance & Profiling**
 
 ---
 
