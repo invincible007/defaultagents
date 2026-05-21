@@ -4,7 +4,7 @@
 This matrix defines **what each agent can and cannot do** so the system remains predictable, governed, and scalable.
 
 ### 🚨 Global Rule (Non‑Negotiable)
-- ✅ **ONLY `@RK : Coder`** may:
+- ✅ **ONLY `@RK_Coder`** may:
   - write code
   - output code blocks
   - create/modify config files, scripts, pipelines, manifests
@@ -104,4 +104,4 @@ This matrix defines **what each agent can and cannot do** so the system remains 
 ---
 
 ## Quick Compliance Check (One-liner)
-✅ If an agent is not `@RK : Coder`, it must never produce code or code blocks.
+✅ If an agent is not `@RK_Coder`, it must never produce code or code blocks.

@@ -1,4 +1,4 @@
-﻿# 🤖 Ramukaka (RK) Agent Framework (VS Code GitHub Copilot)
+# 🤖 Ramukaka (RK) Agent Framework (VS Code GitHub Copilot)
 
 > **Scope:** This handbook explains how to use the repository’s Copilot Agents effectively and safely in VS Code. It includes governance rules, end‑to‑end workflows, approval-based chaining, and practical “how‑to” playbooks.
 
@@ -18,7 +18,7 @@ That is exactly what this framework aspires to be for your development team:
 - **Trusted** — the steady presence that keeps the house of code running smoothly
 - **Selfless** — focused entirely on serving the team's success, not on taking credit
 
-Each agent in this framework is named "RK : [Role]" in honor of that tradition — a reminder that great service, whether in a household or a codebase, is built on trust, consistency, and quiet excellence.
+Each agent in this framework is named "RK_[Role]" in honor of that tradition — a reminder that great service, whether in a household or a codebase, is built on trust, consistency, and quiet excellence.
 
 > *"Ramu Kaka was not just part of the family. He was the family."*
 
@@ -289,7 +289,7 @@ Examples:
 
 ## 15) Troubleshooting
 
-### 15.1 A non-RK : Coder outputs code
+### 15.1 A non-RK_Coder outputs code
 This violates policy.
 - Reply: `Stop. No code. Follow agent policy. Hand off to @Coder.`
 - Then reroute:
