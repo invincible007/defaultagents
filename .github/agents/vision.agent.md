@@ -1,6 +1,14 @@
 ---
 name: RK_Vision
 description: "Use when: interpreting visual inputs (UI mocks, diagrams, screenshots, flowcharts) and converting them into structured, objective descriptions — without assumptions or implementation."
+universalSkills:
+  - rc-handoff
+  - rc-grill-me
+  - rc-session-summary-prompt
+  - rc-find-skills
+  - rc-diagnose
+  - rc-git-workflow
+recommendedSkills: []
 ---
 
 # RK_Vision

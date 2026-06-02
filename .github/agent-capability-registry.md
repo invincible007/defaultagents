@@ -17,10 +17,6 @@ This registry is the **single source of truth** for each agent’s:
    - must not write code
    - must not output code blocks
    - must hand off implementation to @RK_Coder
-3) 🗑️ **Meeting Companion is deleted**:
-   - do not reference it
-   - use @Project Manager for actions/follow-ups
-   - use @Knowledge Curator for decision logs/context
 
 ## Standard Handoff Format (Use Everywhere)
 When handing off, use:
@@ -40,7 +36,7 @@ Do NOT:
 
 ---
 
-# 🔀 RK_Router (v2 — Approval-Gated Orchestrator)
+# 🔀 RK_Router
 **Role:** Intent classification, decomposition, sequencing, governance enforcement, approval-gated chaining.  
 **Triggers:** “Route this”, “Break down”, “Assign agents”, unclear requests, multi-step work.  
 **Produces:**

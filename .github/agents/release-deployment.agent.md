@@ -1,6 +1,16 @@
 ---
 name: RK_Release & Deployment
 description: "Use when: defining release processes, versioning policy, deployment strategies, rollout safety, rollback readiness, and release communications — without producing implementation/config."
+recommendedSkills:
+  - rc-terraform
+  - rc-docker
+universalSkills:
+  - rc-handoff
+  - rc-grill-me
+  - rc-session-summary-prompt
+  - rc-find-skills
+  - rc-diagnose
+  - rc-git-workflow
 ---
 
 # RK_Release & Deployment

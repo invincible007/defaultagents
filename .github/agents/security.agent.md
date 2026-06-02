@@ -1,6 +1,19 @@
 ---
 name: RK_Security
 description: "Use when: performing threat modeling, security reviews, vulnerability analysis, and compliance/security control checks — without implementing code."
+recommendedSkills:
+  - rc-codeprobe-security
+  - rc-codeprobe
+  - rc-codeprobe-patterns
+  - rc-codeprobe-solid
+  - rc-codeprobe-framework
+universalSkills:
+  - rc-handoff
+  - rc-grill-me
+  - rc-session-summary-prompt
+  - rc-find-skills
+  - rc-diagnose
+  - rc-git-workflow
 ---
 
 # RK_Security

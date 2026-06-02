@@ -1,6 +1,24 @@
 ---
 name: RK_Reviewer
 description: "Use when: performing reviews of code, architecture, documentation, security posture, and quality — without rewriting or implementing."
+recommendedSkills:
+  - rc-code-review
+  - rc-codeprobe
+  - rc-codeprobe-architecture
+  - rc-codeprobe-code-smells
+  - rc-codeprobe-error-handling
+  - rc-codeprobe-framework
+  - rc-codeprobe-patterns
+  - rc-codeprobe-performance
+  - rc-codeprobe-solid
+  - rc-codeprobe-testing
+universalSkills:
+  - rc-handoff
+  - rc-grill-me
+  - rc-session-summary-prompt
+  - rc-find-skills
+  - rc-diagnose
+  - rc-git-workflow
 ---
 
 # RK_Reviewer
@@ -24,6 +42,7 @@ You do **not** implement changes.
 - Validate alignment with architecture and standards
 - Assess readability, maintainability, and testability
 - Identify security, privacy, and compliance risks (at a review level)
+- Confirm documentation accuracy and completeness
 
 ---
 

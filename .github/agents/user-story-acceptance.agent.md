@@ -1,6 +1,16 @@
 ---
 name: RK_User Story & Acceptance Criteria
 description: "Use when: converting requirements into clear user stories, acceptance criteria, and testable definitions of ready/done — without design or code."
+recommendedSkills:
+  - rc-to-prd
+  - rc-to-issues
+universalSkills:
+  - rc-handoff
+  - rc-grill-me
+  - rc-session-summary-prompt
+  - rc-find-skills
+  - rc-diagnose
+  - rc-git-workflow
 ---
 
 # RK_User Story & Acceptance Criteria

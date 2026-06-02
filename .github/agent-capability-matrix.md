@@ -9,7 +9,6 @@ This matrix defines **what each agent can and cannot do** so the system remains 
   - output code blocks
   - create/modify config files, scripts, pipelines, manifests
 - ❌ **All other agents** must not write code or output code blocks.
-- 🗑️ **Meeting Companion is deleted** and must not be referenced.
 
 ---
 

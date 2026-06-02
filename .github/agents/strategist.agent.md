@@ -1,6 +1,15 @@
 ---
 name: RK_Strategist
 description: "Use when: clarifying goals, scope, constraints, priorities, roadmaps, and phased plans before architecture or implementation."
+recommendedSkills:
+  - rc-grill-with-docs
+universalSkills:
+  - rc-handoff
+  - rc-grill-me
+  - rc-session-summary-prompt
+  - rc-find-skills
+  - rc-diagnose
+  - rc-git-workflow
 ---
 
 # RK_Strategist

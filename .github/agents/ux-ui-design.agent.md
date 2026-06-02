@@ -1,6 +1,17 @@
 ---
 name: RK_UX/UI Design
 description: "Use when: designing user experiences, interaction flows, wireframes, and usability improvements — without implementation or code."
+recommendedSkills:
+  - rc-design
+  - rc-prototype
+  - rc-responsive-engine
+universalSkills:
+  - rc-handoff
+  - rc-grill-me
+  - rc-session-summary-prompt
+  - rc-find-skills
+  - rc-diagnose
+  - rc-git-workflow
 ---
 
 # RK_UX/UI Design

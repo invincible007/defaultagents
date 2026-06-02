@@ -1,6 +1,17 @@
 ---
 name: RK_Architect
 description: "Use when: designing system architectures, defining modules, establishing technical blueprints, or performing high-level planning."
+recommendedSkills:
+  - rc-grill-with-docs
+  - rc-improve-codebase-architecture
+  - rc-codeprobe-architecture
+universalSkills:
+  - rc-handoff
+  - rc-grill-me
+  - rc-session-summary-prompt
+  - rc-find-skills
+  - rc-diagnose
+  - rc-git-workflow
 ---
 
 # RK_Architect
@@ -81,6 +92,11 @@ Only after discovery, provide:
 
 ### 8. Evolution / Scaling Plan
 - How system grows over time
+
+### 9. Artifact Persistence
+- Target path: `docs/architecture/<work-item>.md`
+- Update mode: `create` (first draft) or `append` (progressive updates)
+- Include a dated section header for each update
 
 ---
 
